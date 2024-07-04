@@ -1,3 +1,7 @@
+const readline = require('readline-syc')
+let userInput = readline.question("Enter a number: ");
+let input = Number(userInput);
+
 // Lab 2.1
 function calculateBMI (weight, height){
     const BMI = weight / (height* 2);
@@ -18,6 +22,7 @@ function calculateBMI (weight, height){
 calculateBMI(70, 1.8);
 // Case 1: weight = 80kg, height = 1.6m
 calculateBMI(80, 1.6);
+
 
 
 // Lab 2.2
@@ -43,10 +48,14 @@ checkOddOrEvenNumber(10.5);
 checkOddOrEvenNumber(10);
 // Case 4: Odd number
 checkOddOrEvenNumber(5);
+// Input form keyboard
+checkOddOrEvenNumber(input);
 
 // Lab 2.3
 function suggestHealth(BMI){
+    const weight_enhance = 0; 
     if (BMI < 18.5 && BMI){
+    
         console.log("Increase weight");
     } else if (BMI >= 25 && BMI){
         console.log("Decrease weight");
