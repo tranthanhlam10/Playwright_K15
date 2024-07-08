@@ -40,8 +40,8 @@ function countOddAndEvenNum(arr){
     console.log("Number of odd is", countOddNum)
 }
 
-// const arr1 = [0,1, 2, 3, 41, -15, -1000, 222];
-// countOddAndEvenNum(arr1);
+let countOddAndEvenNum = inputElementToArr();
+console.log('Array: ', countOddAndEvenNum);
 
 
 // Lab 3.2
@@ -73,10 +73,7 @@ let arr1 = inputElementToArr();
 console.log('Array: ', arr1);
 findMaxNum(arr1);
 findMinNum(arr1);
-
-// const arr2 = [0,1,2,3];
-// console.log("Min value is: " + findMinNum(arr2));
-// console.log("Min value is: " + findMaxNum(arr2));        
+        
 
 
 // Lab 3.3
@@ -98,9 +95,6 @@ function sortFromMinToMax(arr){
 let arr2 = inputElementToArr();
 console.log('Array: ', arr2);
 sortFromMinToMax(arr2); 
-
-// const arr3 = [10,5,1,3,0,4,-1,-2];
-// console.log("Sorted array: " +sortFromMinToMax(arr3));
 
 
 
