@@ -50,7 +50,7 @@ function findMinNum(arr){
     for(let i = 0; i < arr.length; i++){
         if (arr[i] < min){
             min = arr[i];
-            arr[i] = arr[i+1];
+            //arr[i] = arr[i+1]; Chỗ này mình chỉ gán lại thôi, nếu như in cái mảng ra thì lúc nào cũng in hết giá trị min
         }
        
     }    
@@ -62,7 +62,7 @@ function findMaxNum(arr){
     for(let i = 0; i < arr.length; i++){
         if (arr[i] > max){
             max = arr[i];
-            arr[i] = arr[i+1];
+            //arr[i] = arr[i+1]; tương tự với câu comment ở trên
         }
        
     }    
