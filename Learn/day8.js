@@ -49,7 +49,6 @@ while (step< 5){
 }
 
 
-//Lucky Number 
 
 
 
