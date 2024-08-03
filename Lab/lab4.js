@@ -21,7 +21,7 @@ Note: Strongly recommend to create functions to process each tasks
  */
 
 
-let isActive = true;
+
 
 // Create object
 const BrandAccount1 = {
