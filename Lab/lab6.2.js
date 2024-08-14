@@ -28,7 +28,7 @@ async function fetchAllPostsByUser(userId) {
         
         if (posts.length > 0) {
             console.log(`All posts by userId ${userId}:`);
-            posts.forEach(post => {
+            posts.forEach(function(post) {
                 console.log(`Title: ${post.title}`);
                 console.log(`Body: ${post.body}`);
             });
