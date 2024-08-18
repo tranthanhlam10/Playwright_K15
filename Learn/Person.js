@@ -1,4 +1,4 @@
-
+// Data model
 // class để làm gì
 class Person {
 
@@ -6,7 +6,7 @@ class Person {
     //JS không cho nạp chồng
     constructor(name, age) {
         this._name = name; // Nếu không có dấu gạch dưới, tên biến trùng với properties, bị overflow
-        this._age = age;
+        this._age = age; // this, nghia la cho doi tuong duoc cho doi tuong duoc sinh ra duoc truy cap
         
     }
 
