@@ -1,8 +1,8 @@
 // Create Data, call controller to process data
 
 // Nguon goc cua lap trinh MVC
-const Person = require("./Person");
-const AgeController = require("./AgeController");
+import Person from "./Person";
+import AgeController from "./AgeController";
 
 
 let teo = new Person("teo", 11);
