@@ -1,6 +1,6 @@
 import Animal from "./Animal";
 
-export default class AnimalController {
+export default class AnimalController {  
   checkWinner(animals: Animal[]): Animal | undefined {
     if (animals.length === 0) {
       return undefined;

@@ -4,3 +4,8 @@
 // Phục vụ cho abstraction
 
 // Design Patterns nó sinh ra để giải quyết 1 vấn đề trong lập trình 
+// import Person from "./day20";
+// let nam = new Person();
+// nam.age = 18;
+
+
