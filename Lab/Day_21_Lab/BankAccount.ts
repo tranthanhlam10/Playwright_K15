@@ -15,5 +15,9 @@ export default abstract class BankAccount {
   abstract withdraw(amount: number): void;
   abstract deposit(amount: number): void;
   abstract getBalance(): number;
+
+  getHello() {
+    console.log("Tao là ngân hàng acb");
+  }
 }
 

@@ -3,6 +3,7 @@ import BankAccount from "./BankAccount";
 export default class SavingAccount extends BankAccount {
   constructor(balance: number) {
     super(balance);
+     
   }
 
 
@@ -32,6 +33,7 @@ export default class SavingAccount extends BankAccount {
     }
   
   getBalance(): number {
+    super.getHello(); // Làm để cho biết sự khá nhau về mặt bản chất của this và superr
     console.log("Recent Balance: " + this.balance);
     return this.balance;
   }

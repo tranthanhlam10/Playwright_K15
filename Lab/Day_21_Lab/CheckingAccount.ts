@@ -3,9 +3,9 @@ import BankAccount from "./BankAccount";
 export default class CheckingAccount extends BankAccount {
   private minimumBalance: number;
 
-  constructor(balance: number, minimumBalance: number) {
-    super(balance);
-    this.minimumBalance = minimumBalance;
+   constructor(balance: number, minimumBalancee: number) {
+     super(balance);
+     this.minimumBalance = minimumBalancee;
   }
 
   withdraw(amount: number): void {
@@ -33,6 +33,7 @@ export default class CheckingAccount extends BankAccount {
   }
 
   getBalance(): number {
+    this.getHello(); // Làm để cho biết sự khá nhau về mặt bản chất của this và superr
     console.log("Recent Balance: "+ this.balance);
     return this.balance;
   }
