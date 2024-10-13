@@ -86,7 +86,7 @@ test("Mouse Hover and narrow down searching scope", async ({ page }) => {
 }); 
 
 // Tim tu componet bu xuong de nhung locator con => Toi gian hoa cac selector
-test.only("Checking element state and handle dynamic state", async ({ page }) => {
+test("Checking element state and handle dynamic state", async ({ page }) => {
   // Check current state
   // Trigger
   // Wait expected state hand interact
