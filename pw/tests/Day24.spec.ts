@@ -55,7 +55,7 @@ test("Link Text - Filtering", async ({ page }) => {
 });
 
 
-test.only("From Authen", async ({ page }) => {
+test("From Authen", async ({ page }) => {
   await page.goto("/login");
   // Form interaction
     await page.locator("#username").fill("tomsmith");
