@@ -2,7 +2,7 @@ import test from "@playwright/test";
 import HomePage from "../pages/HomePage";
 
 
-test.only("Test Header Component", async ({ page }) => {
+test("Test Header Component", async ({ page }) => {
 
  
    await page.goto("https://demowebshop.tricentis.com/");
