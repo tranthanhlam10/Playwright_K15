@@ -1,23 +1,43 @@
-export default class API{
-    private baseURI: string;
-    private endpoint: string;   
-    private params: {};
+import { get } from "http";
 
-    constructor(baseURI: string, endpoint: string, params: {}){
-        this.baseURI = baseURI;
-        this.endpoint = endpoint;
-        this.params = params; 
-    }; 
+export default class API {
+  private baseURI: string;
+  private endpoint: string;
+  private params: {};
+  private token: string;
+  private groupId: number;
 
-    getBaseURI(){
-        return this.baseURI;    
-    }
+  constructor(
+    baseURI: string,
+    endpoint: string,
+    params: {},
+    token: string,
+    groupId: number
+  ) {
+    this.baseURI = baseURI;
+    this.endpoint = endpoint;
+    this.params = params;
+    this.token = token;
+    this.groupId = groupId;
+  }
 
-    getEndpoint(){
-        return this.endpoint;
-    } 
+  getBaseURI() {
+    return this.baseURI;
+  }
 
-    getParams(){
-        return this.params;  
-    }   
+  getEndpoint() {
+    return this.endpoint;
+  }
+
+  getParams() {
+    return this.params;
+  }
+
+  getToken(){
+    return this.token;
+  }
+
+  getGroupId() {
+    return this.groupId;
+  }
 }

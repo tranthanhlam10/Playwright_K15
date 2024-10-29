@@ -22,3 +22,7 @@ test("Test List of ProductItem Components", async ({ page }) => {
 
    await page.waitForTimeout(2000);
 });
+
+
+
+

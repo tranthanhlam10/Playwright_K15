@@ -14,6 +14,8 @@ test.only("Test Base Component", async ({ page }) => {
   for(let link of columnLinks) {
     const linkText = await link.textContent();
     console.log(linkText);
+
   }
+
   await page.waitForTimeout(2000);
 });
