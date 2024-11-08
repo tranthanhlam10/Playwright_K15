@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "teo": "playwright test --headed"
+    "teo": "playwright test --headed",
+     "test": "playwright test"
   },
   "author": "",
   "license": "ISC",
