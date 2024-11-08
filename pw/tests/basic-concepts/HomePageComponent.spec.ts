@@ -1,5 +1,5 @@
 import test from "@playwright/test";
-import HomePage from "../pages/HomePage";
+import HomePage from "../../pages/HomePage";
 
 
 test("Test Header Component", async ({ page }) => {

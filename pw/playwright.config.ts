@@ -27,7 +27,7 @@ export default defineConfig({
   reporter: "html",
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: "https://the-internet.herokuapp.com/",
+    baseURL: "https://demowebshop.tricentis.com",
     actionTimeout: 5000, // implicit wait
     headless: false,
 

@@ -3,7 +3,7 @@ import HeaderComponent from "../components/global/HeaderComponent";
 import { PageBodyComponent } from "../components/PageBodyComponent";
 import { FooterComponent } from "../components/global/FooterComponent";
 
-export default class HomePage {
+export  class HomePage {
   constructor(private page: Page) {
     this.page = page;
   }
