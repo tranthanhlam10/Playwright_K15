@@ -29,9 +29,8 @@ export default class Authorrization {
         },
       }
     );
-    const token: string = response.data.accessToken;
-    return token;
-    
+    const token: string = response.data.accessToken.toString();
+    return token as string; 
   } 
 } 
 
@@ -39,7 +38,7 @@ export default class Authorrization {
 async useToken() {
   const token = await this.generateToken();  // `token` là `string`
   console.log("", token) 
-  const hi: string = token ;
+  const hi: string = String(token) ;
   return hi;    
 }
 

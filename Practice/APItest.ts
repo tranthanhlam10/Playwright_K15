@@ -20,16 +20,16 @@ const params = {
 
 const author = new Authorrization("lamtt@younetgroup.com", "Lam@12345", "local");
 
- author.useToken();
+ const token = author.generateToken();
 
 
  const brandContributionAPI = new API(
    "https://api-staging-eca.younetmedia.com/eca/dashboards/",
    "brand-comparison-on-shop-types",
    params,
-   , // Đang vướng chỗ typpe cua token
+   token, // Đang vướng chỗ typpe cua token
    5325
  );
 
  const brandController = new APIcontroller();
- brandController.getReponse(brandContributionAPI);
+ brandController.getReponse(brandContributionAPI, token);

@@ -5,7 +5,7 @@ import { ProductItemComponent } from "./ProductItemComponent";
 
 export class PageBodyComponent {
 
-    // Nhung locator deu phai co nhung thay doi, moi co viejc cho minh lam
+    // Nhung locator deu phai co nhung thay doi, moi co viec cho minh lam
   public static selector: string = '.page-body';
   constructor(private component: Locator) {
     this.component = component;
