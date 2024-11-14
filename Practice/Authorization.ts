@@ -35,14 +35,4 @@ export default class Authorrization {
 } 
 
 
-async useToken() {
-  const token = await this.generateToken();  // `token` là `string`
-  console.log("", token) 
-  const hi: string = String(token) ;
-  return hi;    
-}
-
-
-
-
 }
