@@ -17,7 +17,7 @@ export default class Authorrization {
 
     {
     const response: AxiosResponse<{ accessToken: string }> = await axios.post(
-      "https://api-staging-eca.younetmedia.com/authentication",
+      API.baseURI + "/authentication",
       {
         email: this.userName,
         password: this.passWord,

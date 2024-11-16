@@ -1,4 +1,5 @@
 
 {
-    "test": "mocha --require ts-node/register 'tests/**/*.spec.ts'"
+   //"test": "mocha --require ts-node/register 'tests/**/*.spec.ts'"
+   
 }

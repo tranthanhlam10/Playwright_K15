@@ -1,9 +1,12 @@
 import axios, { AxiosResponse } from "axios";
 import API from "./API";
 import qs = require("qs");
+
+
+// Add more return infomation of API
 export default class APIcontroller {
   async getMethod(api: API, token: string) {
-    const response = await axios.get(api.getBaseURI() + api.getEndpoint(), {
+    const response = await axios.get(API.baseURI + api.getEndpoint(), {
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,
@@ -13,11 +16,13 @@ export default class APIcontroller {
     });
     console.log(response.data);
     console.log(response.status);
-    return response.data;
+    return {
+      status: response.status,
+      data: response.data};
   }
 
   async postMethod(api: API, token: string) {
-    const response = await axios.post(api.getBaseURI() + api.getEndpoint(), {
+    const response = await axios.post(API.baseURI + api.getEndpoint(), {
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,
@@ -31,7 +36,7 @@ export default class APIcontroller {
   }
 
   async putMethod(api: API, token: string) {
-    const response = await axios.put(api.getBaseURI() + api.getEndpoint(), {
+    const response = await axios.put(API.baseURI + api.getEndpoint(), {
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,
@@ -46,7 +51,7 @@ export default class APIcontroller {
   }
 
   async patchMethod(api: API, token: string) {
-    const response = await axios.patch(api.getBaseURI() + api.getEndpoint(), {
+    const response = await axios.patch(API.baseURI + api.getEndpoint(), {
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,
@@ -61,7 +66,7 @@ export default class APIcontroller {
   }
 
   async deleteMethod(api: API, token: string) {
-    const response = await axios.delete(api.getBaseURI() + api.getEndpoint(), {
+    const response = await axios.delete(API.baseURI + api.getEndpoint(), {
       headers: {
         "Content-Type": "application/json",
         Authorization: `${token}`,
