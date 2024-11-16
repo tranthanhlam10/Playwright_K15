@@ -17,7 +17,7 @@ export default class Authorrization {
 
     {
     const response: AxiosResponse<{ accessToken: string }> = await axios.post(
-      "https://api-staging-eca.younetmedia.com/authentication",
+      API.baseURI + "/authentication",
       {
         email: this.userName,
         password: this.passWord,
@@ -33,16 +33,6 @@ export default class Authorrization {
     return token as string; 
   } 
 } 
-
-
-async useToken() {
-  const token = await this.generateToken();  // `token` là `string`
-  console.log("", token) 
-  const hi: string = String(token) ;
-  return hi;    
-}
-
-
 
 
 }

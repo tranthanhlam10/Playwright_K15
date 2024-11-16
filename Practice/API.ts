@@ -1,29 +1,27 @@
 import { get } from "http";
 
 export default class API {
-  private baseURI: string;
+  public static baseURI: string = "https://api-staging-eca.younetmedia.com/";
   private endpoint: string;
-  private params: {};
+  private params?: object;
+  private data?: object;
   private token: string;
   private groupId: number;
 
   constructor(
-    baseURI: string,
     endpoint: string,
-    params: {},
     token: string,
-    groupId: number
+    groupId: number,
+    params?: object,
+    data?: object
   ) {
-    this.baseURI = baseURI;
     this.endpoint = endpoint;
     this.params = params;
     this.token = token;
     this.groupId = groupId;
+    this.data = data;
   }
 
-  getBaseURI() {
-    return this.baseURI;
-  }
 
   getEndpoint() {
     return this.endpoint;
@@ -33,7 +31,11 @@ export default class API {
     return this.params;
   }
 
-  getToken(){
+  getData() {
+    return this.data;
+  }
+
+  getToken() {
     return this.token;
   }
 
