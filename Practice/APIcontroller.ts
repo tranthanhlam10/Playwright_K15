@@ -32,8 +32,11 @@ export default class APIcontroller {
     });
     console.log(response.data);
     console.log(response.status);
-    return response.data;
+    return {
+      status: response.status,
+      data: response.data
   }
+}
 
   async putMethod(api: API, token: string) {
     const response = await axios.put(API.baseURI + api.getEndpoint(), {
@@ -47,8 +50,11 @@ export default class APIcontroller {
     });
     console.log(response.data);
     console.log(response.status);
-    return response.data;
+    return {
+      status: response.status,
+      data: response.data
   }
+}
 
   async patchMethod(api: API, token: string) {
     const response = await axios.patch(API.baseURI + api.getEndpoint(), {
@@ -62,8 +68,11 @@ export default class APIcontroller {
     });
     console.log(response.data);
     console.log(response.status);
-    return response.data;
+    return {
+      status: response.status,
+      data: response.data
   }
+}
 
   async deleteMethod(api: API, token: string) {
     const response = await axios.delete(API.baseURI + api.getEndpoint(), {
@@ -76,6 +85,9 @@ export default class APIcontroller {
     });
     console.log(response.data);
     console.log(response.status);
-    return response.data;
+    return {
+      status: response.status,
+      data: response.data
   }
+}
 }
