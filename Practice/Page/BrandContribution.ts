@@ -1,11 +1,9 @@
-import API from "./API";
-import APIcontroller from "./APIcontroller";
-import Authorrization from "./Authorization";
-
+import API from "../Core/API";
+import APIcontroller from "../Core/APIcontroller";
+import Authorrization from "../Core/Authorization";
 
 export default class BrandContribution {
-
-  async brandContributionOnShoptye(){
+  async brandContributionOnShoptye() {
     const author = new Authorrization(
       "lamtt@younetgroup.com",
       "Lam@12345",
@@ -37,8 +35,11 @@ export default class BrandContribution {
     );
 
     const brandController = new APIcontroller();
-    const jsonData = await brandController.getMethod(brandContributionAPI, token);
+    const jsonData = await brandController.getMethod(
+      brandContributionAPI,
+      token
+    );
 
-    return jsonData;    
+    return jsonData;
   }
 }
