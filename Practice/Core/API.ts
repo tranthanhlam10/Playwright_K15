@@ -14,7 +14,9 @@ export default class API {
     groupId: number,
     params?: object,
     data?: object
-  ) {
+  ) 
+  
+  {
     this.endpoint = endpoint;
     this.params = params;
     this.token = token;
