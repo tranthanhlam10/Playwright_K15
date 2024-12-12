@@ -1,5 +1,19 @@
-
 {
-   //"test": "mocha --require ts-node/register 'tests/**/*.spec.ts'"
-   
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["node"]
+  },
+  "include": [
+    "src/**/*.ts",    // Đảm bảo rằng thư mục src có tệp .ts
+    "tests/**/*.ts"   // Đảm bảo rằng thư mục tests có tệp .ts
+  ],
+  "exclude": [
+    "node_modules"    // Không biên dịch node_modules
+  ]
 }

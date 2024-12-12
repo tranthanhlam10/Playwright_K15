@@ -1,5 +1,5 @@
 import { describe, expect, it, test } from "@jest/globals";
-import BrandContribution from "../Page/BrandContribution";
+import BrandContribution from "../src/Page/BrandContribution";
 
 const brandContribution = new BrandContribution();
 

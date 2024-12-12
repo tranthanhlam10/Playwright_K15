@@ -1,6 +1,5 @@
 import axios, { AxiosResponse } from "axios";
 import API from "./API";
-import qs = require("qs");
 
 const CONTENT_TYPE = "application/json";
 

@@ -1,6 +1,5 @@
 import axios, { AxiosResponse } from "axios";
 import API from "./API";
-import QueryString = require("qs");
 
 export default class Authorrization {
   private userName: string;
