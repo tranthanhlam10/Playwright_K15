@@ -3,10 +3,13 @@
         "test": "jest"
     },
     "devDependencies": {
+        "@types/jest": "^29.5.14",
+        "@types/node": "^22.10.1",
         "ts-jest": "^29.2.5"
     },
     "dependencies": {
         "@google-cloud/local-auth": "^2.1.0",
+        "@google-cloud/storage": "^7.14.0",
         "dotenv": "^16.4.5",
         "googleapis": "^105.0.0"
     }
