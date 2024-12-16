@@ -14,4 +14,14 @@ module.exports = {
     },
   },
   setupFiles: ["dotenv/config"], // Nếu bạn cần sử dụng các biến môi trường (nếu có)
+
+  // reporters: [
+  //   "default", // Báo cáo mặc định của Jest
+  //   [
+  //     "jest-allure-reporter",
+  //     {
+  //       resultsDir: "allure-results", // Thư mục lưu kết quả của Allure
+  //     },
+  //   ],
+  // ],
 };

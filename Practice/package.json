@@ -5,6 +5,10 @@
     "devDependencies": {
         "@types/jest": "^29.5.14",
         "@types/node": "^22.10.1",
+        "allure-commandline": "^2.32.0",
+        "allure-jest": "^3.0.7",
+        "jest-allure-reporter": "^1.2.3",
+        "jest-environment-node": "^29.7.0",
         "ts-jest": "^29.2.5"
     },
     "dependencies": {
