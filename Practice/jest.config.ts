@@ -1,23 +1,10 @@
-// import type { Config } from "@jest/types";
-
-// const config: Config.InitialOptions = {
-//   preset: "ts-jest",
-//   testEnvironment: "node",
-//   reporters: [
-//     "default",
-//     "jest-allure-reporter", // Báo cáo Allure
-//   ],
-//   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"], // Thiết lập Allure
-//   globals: {
-//     "ts-jest": {
-//       tsconfig: "<rootDir>/tsconfig.json",
-//     },
-//   },
-// };
-
-// export default config;
 
 import type { Config } from "@jest/types";
+import { matchers } from "jest-json-schema";
+import "jest-json-schema";
+
+//expect.extend(matchers);
+
 
 const config: Config.InitialOptions = {
   preset: "ts-jest",
@@ -37,7 +24,18 @@ const config: Config.InitialOptions = {
       tsconfig: "<rootDir>/tsconfig.json",
     },
   },
+
+
 };
+
+
+
+module.exports = {
+  setupFilesAfterEnv: ["./jest.config.ts"]
+};
+
+
+
 
 export default config;
 
