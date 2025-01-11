@@ -7,14 +7,22 @@
     "strict": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types"],
-     "types": ["jest", "node"]
+    "typeRoots": ["node_modules/@types", "./src/types", "./index.d.ts"],
+    "types": ["jest", "node"]
   },
   "include": [
-    "src/**/*.ts",    // Đảm bảo rằng thư mục src có tệp .ts
-    "tests/**/*.ts"   // Đảm bảo rằng thư mục tests có tệp .ts
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "src/**/*",
+    "types/**/*",
+    "index.d.ts"
   ],
   "exclude": [
-    "node_modules"    // Không biên dịch node_modules
+    "node_modules" // Không biên dịch node_modules
+  ],
+
+  "files": [
+    "index.d.ts"
+    //"tests/BrandContributionTest.spec.ts"
   ]
 }

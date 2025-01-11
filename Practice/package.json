@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
+    "@types/jest-json-schema": "^6.1.4",
     "@types/node": "^22.10.1",
     "allure-commandline": "^2.32.0",
     "allure-jest": "^3.0.7",
@@ -17,12 +18,14 @@
     "jest-allure-reporter": "^1.2.3",
     "jest-allure2-adapter": "^0.3.12",
     "jest-environment-node": "^29.7.0",
+    "jest-json-schema": "^6.1.0",
     "ts-jest": "^29.2.5",
     "typescript": "^5.7.2"
   },
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.0",
     "@google-cloud/storage": "^7.14.0",
+    "ajv": "^8.17.1",
     "dotenv": "^16.4.5",
     "googleapis": "^105.0.0"
   }
