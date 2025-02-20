@@ -1,0 +1,1 @@
+import "jest-json-schema";

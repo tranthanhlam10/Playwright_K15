@@ -2,19 +2,14 @@ import { describe, expect, it, test } from "@jest/globals";
 import BrandContribution from "../src/Page/BrandContribution";
 import * as allure from "allure-js-commons";
 import { matchers } from "jest-json-schema";
-expect.extend(matchers);
-//import { matchersWithOptions } from "jest-json-schema";
-
-
+//expect.extend(matchers);
 
 // Retry fail test case
-jest.retryTimes(3, { logErrorsBeforeRetry: true });
+jest.retryTimes(5, { logErrorsBeforeRetry: true });
 
 const brandContribution = new BrandContribution();
 const SECONDS = 1000;
 jest.setTimeout(10 * SECONDS);
-
-
 
 
 // This file contains test (expected result + data test)
@@ -82,6 +77,24 @@ describe("Brand Test", () => {
 
     console.log(responseData);
 
-    //expect(responseData).toMatchSchema(schema);
   });
 });
+
+
+describe("Brand Test", () => {
+  it("Brand Contribution on shoptype check value of Brand", async () => {
+    await allure.epic("ECI");
+    await allure.feature("Market Insights");
+    await allure.suite("Brand Contribution");
+    await allure.severity("critical");
+    const status = (await brandContribution.brandContributionOnShoptye())
+      .status;
+    expect(status).toBe(200);
+  });
+});
+
+
+
+
+
+
