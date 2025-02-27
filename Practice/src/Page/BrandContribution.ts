@@ -33,7 +33,7 @@ export default class BrandContribution {
       ), // 3
     };
 
-    console.log("Params:", params);
+    //console.log("Params:", params);
 
     const brandContributionAPI = new API(
       "eca/dashboards/brand-comparison-on-shop-types",
@@ -80,7 +80,7 @@ export default class BrandContribution {
       ), // 3
     };
 
-    console.log("Params:", params);
+    //console.log("Params:", params);
 
     const brandContributionAPI = new API(
       "eca/dashboards/brand-comparison-on-platforms",

@@ -1,4 +1,5 @@
-import "jest";
+//import "jest";
+import "jest-json-schema";
 
 declare global {
   namespace jest {
@@ -7,3 +8,5 @@ declare global {
     }
   }
 }
+
+export {};

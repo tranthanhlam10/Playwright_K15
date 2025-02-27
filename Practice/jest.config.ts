@@ -13,12 +13,13 @@ const config: Config.InitialOptions = {
       },
     ],
   ],
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   globals: {
     "ts-jest": {
       tsconfig: "<rootDir>/tsconfig.json",
     },
 
-    setupFilesAfterEnv: ["./jest.setup.ts"],
+    setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
   },
 };
 

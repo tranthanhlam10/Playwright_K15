@@ -7,7 +7,7 @@
     "strict": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "typeRoots": ["node_modules/@types", "./jest.d.ts"],
+    "typeRoots": ["node_modules/@types"],
     "types": ["jest", "node"]
   },
   "include": [
@@ -18,11 +18,9 @@
     "jest.d.ts",
     "jest.setup.ts"
   ],
-  // "exclude": [
-  //   "node_modules" // Không biên dịch node_modules
-  // ],
+  "exclude": ["node_modules", "dist"],
 
   "files": [
-    "jest.d.ts", "jest.setup.ts", "./tests/BrandContributionTest.spec.ts"
+    "jest.d.ts", "jest.setup.ts"
   ]
 }
