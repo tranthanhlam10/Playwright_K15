@@ -21,6 +21,12 @@ addFormats(ajv);
 //This file contains test (expected result + data test)
 //Nghien cuu cach them hook cho test
 
+
+// Sử dụng data provider để pass data vào
+// www.npmjs.com/package/test-data-provider
+// Lưu các test case thành 1 mảng object -> có thêm description của test cases nữa
+// từ đó paste vào test case
+
 describe("Brand Test", () => {
   it("Brand Contribution on shoptype status's check", async () => {
     await allure.epic("ECI");
