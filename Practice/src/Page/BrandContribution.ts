@@ -2,6 +2,7 @@ import API from "../../src/Core/API";
 import APIcontroller from "../../src/Core/APIcontroller";
 import Authorrization from "../../src/Core/Authorization";
 import GGSheetHelper from "../Helper/readGoogleSheet";
+import envconfig from "../../config";
 
 export default class BrandContribution {
   //shoptype
@@ -33,7 +34,6 @@ export default class BrandContribution {
       ), // 3
     };
 
-    //console.log("Params:", params);
 
     const brandContributionAPI = new API(
       "eca/dashboards/brand-comparison-on-shop-types",
@@ -77,7 +77,7 @@ export default class BrandContribution {
       $exclude_gift: sheetData["exclude_gift"] === "TRUE", // true
       $abnormal_by_rating_sold_threshold: parseInt(
         sheetData["abnormal_by_rating_sold_threshold"]
-      ), // 3
+      ), 
     };
 
     //console.log("Params:", params);

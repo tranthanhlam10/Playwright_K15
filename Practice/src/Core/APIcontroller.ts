@@ -14,8 +14,8 @@ export default class APIcontroller {
       },
       params: api.getParams(),
     });
-    console.log(response.data);
-    console.log(response.status);
+    //console.log(response.data);
+    //console.log(response.status);
     return {
       status: response.status,
       data: response.data,
@@ -31,8 +31,8 @@ export default class APIcontroller {
       },
       data: api.getData(),
     });
-    console.log(response.data);
-    console.log(response.status);
+    //console.log(response.data);
+    //console.log(response.status);
     return {
       status: response.status,
       data: response.data,
@@ -67,8 +67,8 @@ export default class APIcontroller {
       params: api.getParams(),
       data: api.getData(),
     });
-    console.log(response.data);
-    console.log(response.status);
+   // console.log(response.data);
+    //console.log(response.status);
     return {
       status: response.status,
       data: response.data,
@@ -84,8 +84,8 @@ export default class APIcontroller {
       },
       params: api.getParams(),
     });
-    console.log(response.data);
-    console.log(response.status);
+    //console.log(response.data);
+    //console.log(response.status);
     return {
       status: response.status,
       data: response.data,

@@ -22,15 +22,15 @@
     "jest-allure2-adapter": "^0.3.12",
     "jest-environment-node": "^29.7.0",
     "jest-json-schema": "^6.1.0",
-    "ts-jest": "^29.2.5",
+    "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   },
   "dependencies": {
     "@google-cloud/local-auth": "^2.1.0",
     "@google-cloud/storage": "^7.14.0",
     "axios": "^1.7.9",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.4.7",
     "googleapis": "^105.0.0"
   }
 }

@@ -2,6 +2,7 @@ import API from "../../src/Core/API";
 import APIcontroller from "../../src/Core/APIcontroller";
 import Authorrization from "../../src/Core/Authorization";
 import GGSheetHelper from "../Helper/readGoogleSheet";
+import envconfig from "../../config";
 
 export default class CategoryLandscape {
   async brandContributionOnShoptye() {

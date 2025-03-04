@@ -5,6 +5,3 @@ import "@testing-library/jest-dom"; // Nếu dùng React Testing Library
 import { matchers } from "jest-json-schema";
 expect.extend(matchers);
 
-// Nếu cần Allure
-//import { setJestAllureReporter } from "allure-jest";
-//setJestAllureReporter();
