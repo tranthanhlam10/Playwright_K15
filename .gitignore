@@ -5,5 +5,8 @@ node_modules/
 /playwright/.cache/
 Practice/src/Helper/service-account.json
 *.env
+**/*.env
+.env
+Practice/.env
 Practice/allure-report/
 Practice/allure-result/
