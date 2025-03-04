@@ -18,6 +18,16 @@ const ajv = new Ajv();
 addFormats(ajv);
 
 
+
+// beforeAll(() => {
+//   console.log("Test Brand Contribution");
+// })
+
+
+// afterAll(() => {
+//   console.log("Finish");
+// })  
+
 //This file contains test (expected result + data test)
 //Nghien cuu cach them hook cho test
 
@@ -86,9 +96,9 @@ describe("Brand Test", () => {
     const validate = ajv.compile(schema);
     const isValid = validate(responseData.data);
 
-    console.log(responseData.data);
-    console.log(isValid);
-    console.log(validate);
+    //console.log(responseData.data);
+    //console.log(isValid);
+    //console.log(validate);
 
 
     expect(isValid).toBe(true);

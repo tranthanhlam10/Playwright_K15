@@ -7,9 +7,9 @@ import envconfig from "../../config";
 export default class CategoryLandscape {
   async brandContributionOnShoptye() {
     const author = new Authorrization(
-      envconfig.username,
-      envconfig.password,
-      envconfig.strategy
+      "lamtt@younetgroup.com",
+      "Lam@12345",
+      "local"
     );
 
     const token = await author.generateToken();

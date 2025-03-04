@@ -3,18 +3,15 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+
+
 interface Config {
-  username: string;
-  password: string;
-  strategy: string;
-  BASE_URL: string;
+  BASE_URI: string;
 }
 
 const envconfig = {
-  username: process.env.USERNAME || "",
-  password: process.env.PASSWORD || "",
-  strategy: process.env.STRATEGY || "default",
-  base_URI: process.env.BASE_URL || ""
+  base_URI: process.env.BASE_URI || ""
 };
 
 export default envconfig; 
+
