@@ -1,8 +1,9 @@
 import { get } from "http";
+import envconfig from "../../config";
 
 export default class API {
   // Format lại URL, tư duy chia theo folder, hoặc chắc năng
-  public static baseURI: string = "https://api-staging-eca.younetmedia.com/";
+  public static baseURI: string =envconfig.base_URI;
   private endpoint: string;
   private params?: object;
   private data?: object;

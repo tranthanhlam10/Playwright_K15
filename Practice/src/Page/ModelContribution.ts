@@ -2,13 +2,14 @@ import API from "../../src/Core/API";
 import APIcontroller from "../../src/Core/APIcontroller";
 import Authorrization from "../../src/Core/Authorization";
 import GGSheetHelper from "../Helper/readGoogleSheet";
+import envconfig from "../../config";
 
 export default class ModelContribution {
   async brandContributionOnShoptye() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();

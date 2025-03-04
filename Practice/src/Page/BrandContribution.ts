@@ -1,22 +1,17 @@
-
 import API from "../../src/Core/API";
 import APIcontroller from "../../src/Core/APIcontroller";
 import Authorrization from "../../src/Core/Authorization";
 import GGSheetHelper from "../Helper/readGoogleSheet";
-
-
-// File nay dang config sai
 import envconfig from "../../config";
-
-console.log("Username:", envconfig.username);
-
-
-
 
 export default class BrandContribution {
   //shoptype
   async brandContributionOnShoptye() {
-    const author = new Authorrization(envconfig.username, "Lam@12345", "local");
+    const author = new Authorrization(
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
+    );
 
     const token = await author.generateToken();
     console.log(token);
@@ -60,9 +55,9 @@ export default class BrandContribution {
   //platform
   async brandContributionOnPlatform() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
@@ -107,9 +102,9 @@ export default class BrandContribution {
   //overview
   async brandContributionOverview() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
@@ -153,9 +148,9 @@ export default class BrandContribution {
   // Price piano
   async brandContributionPiano() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
@@ -200,9 +195,9 @@ export default class BrandContribution {
   //Top store summary
   async brandContributionStoreSummary() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
@@ -246,9 +241,9 @@ export default class BrandContribution {
   //Top store contribution
   async brandContributionStoreContribution() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
@@ -294,9 +289,9 @@ export default class BrandContribution {
   //Top model
   async brandContributionTopModel() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
@@ -344,9 +339,9 @@ export default class BrandContribution {
   //Top product
   async brandContributionTopProduct() {
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      envconfig.username,
+      envconfig.password,
+      envconfig.strategy
     );
 
     const token = await author.generateToken();
