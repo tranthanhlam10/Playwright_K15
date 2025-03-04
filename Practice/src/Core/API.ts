@@ -3,7 +3,7 @@ import envconfig from "../../config";
 
 export default class API {
   // Format lại URL, tư duy chia theo folder, hoặc chắc năng
-  public static baseURI: string =envconfig.base_URI;
+  public static baseURI: string = envconfig.base_URI;
   private endpoint: string;
   private params?: object;
   private data?: object;
