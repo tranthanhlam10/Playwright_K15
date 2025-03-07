@@ -1,16 +1,30 @@
+import path from "path";
 import API from "../../src/Core/API";
 import APIcontroller from "../../src/Core/APIcontroller";
 import Authorrization from "../../src/Core/Authorization";
 import GGSheetHelper from "../Helper/readGoogleSheet";
-import envconfig from "../../config";
+import readJsonFile from "../Helper/readJsonFile";
+import { console } from "inspector";
+import AccountSevice from "../Helper/AccountService";
+
+
+
+
 
 export default class BrandContribution {
   //shoptype
   async brandContributionOnShoptye() {
+
+
+    const account = new AccountSevice();
+    const login: Account | undefined = await account.initAccount("Market Insight");
+
+   
+
     const author = new Authorrization(
-      "lamtt@younetgroup.com",
-      "Lam@12345",
-      "local"
+      login!.email,
+      login!.password,
+      login!.strategy
     );
 
     const token = await author.generateToken();
@@ -18,6 +32,8 @@ export default class BrandContribution {
 
     const sheetHelper = new GGSheetHelper();
     const sheetData = await sheetHelper.readGoogleSheet();
+
+
 
     const params: object = {
       $comparing_period: sheetData["comparing_period"], // "week"
@@ -31,9 +47,8 @@ export default class BrandContribution {
       $exclude_gift: sheetData["exclude_gift"] === "TRUE", // true
       $abnormal_by_rating_sold_threshold: parseInt(
         sheetData["abnormal_by_rating_sold_threshold"]
-      ), // 3
+      ),
     };
-
 
     const brandContributionAPI = new API(
       "eca/dashboards/brand-comparison-on-shop-types",

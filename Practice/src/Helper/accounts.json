@@ -1,0 +1,32 @@
+[
+  {
+    "role": "Market Insight",
+    "email": "lamtt_AccountAdmin@younetgroup.com",
+    "password": "Lam@12345",
+    "strategy": "local"
+  },
+  {
+    "role": "Content Creator",
+    "email": "lamtt_User@younetgroup.com",
+    "password": "Lam@12345",
+    "strategy": "local"
+  },
+  {
+    "role": "Only Market Insights",
+    "email": "lamtt_Editor@younetgroup.com",
+    "password": "Lam@12345",
+    "strategy": "local"
+  },
+  {
+    "role": "Super System Admin",
+    "email": "lamtt@younetgroup.com",
+    "password": "Lam@12345",
+    "strategy": "local"
+  },
+  {
+    "role": "Market Insight Restrict",
+    "email": "lamtt_Observer@younetgroup.com",
+    "password": "Lam@12345",
+    "strategy": "local"
+  }
+]
