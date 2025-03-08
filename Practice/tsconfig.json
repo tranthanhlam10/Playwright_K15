@@ -8,7 +8,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "typeRoots": ["node_modules/@types"],
-    "types": ["jest", "node"]
+    "types": ["jest", "node"],
+    "strictPropertyInitialization": false
   },
   "include": [
     "src/**/*.ts",

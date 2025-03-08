@@ -80,15 +80,3 @@ describe("Brand Test", () => {
     
   });
 });
-
-// describe("Brand Test", () => {
-//   it("Brand Contribution on shoptype check value of Brand", async () => {
-//     await allure.epic("ECI");
-//     await allure.feature("Market Insights");
-//     await allure.suite("Brand Contribution");
-//     await allure.severity("critical");
-//     const status = (await brandContribution.brandContributionOnShoptye())
-//       .status;
-//     expect(status).toBe(200);
-//   });
-// });

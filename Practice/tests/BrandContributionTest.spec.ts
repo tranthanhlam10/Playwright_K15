@@ -19,14 +19,14 @@ addFormats(ajv);
 
 
 
-// beforeAll(() => {
-//   console.log("Test Brand Contribution");
-// })
+beforeAll(() => {
+  console.log("Test Brand Contribution");
+})
 
 
-// afterAll(() => {
-//   console.log("Finish");
-// })  
+afterAll(() => {
+  console.log("Finish");
+})  
 
 //This file contains test (expected result + data test)
 //Nghien cuu cach them hook cho test
@@ -95,11 +95,6 @@ describe("Brand Test", () => {
     const responseData = (await brandContribution.brandContributionOnShoptye());
     const validate = ajv.compile(schema);
     const isValid = validate(responseData.data);
-
-    //console.log(responseData.data);
-    //console.log(isValid);
-    //console.log(validate);
-
 
     expect(isValid).toBe(true);
     if (!isValid) console.log(validate.errors);
