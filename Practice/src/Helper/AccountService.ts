@@ -10,7 +10,7 @@ export default class AccountSevice {
     console.log(typeof accounts);
 
     if (Array.isArray(accounts)) {
-      return accounts.find((account) => userRole === account.role);
+      return accounts.find((account: any) => userRole === account.role);
     } else {
       console.log("Read account failed");
     }

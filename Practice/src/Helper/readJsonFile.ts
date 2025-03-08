@@ -20,7 +20,7 @@ export default class readJsonFile {
     try {
       const data = fs.readFileSync(this.link, "utf8");
       console.log(data.toString());
-      return data.toString();
+      return JSON.parse(data);
     } catch (err) {
       console.error("Lỗi đọc file:", err);
       return null;
