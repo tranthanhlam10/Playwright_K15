@@ -8,9 +8,6 @@ import { console } from "inspector";
 import AccountSevice from "../Helper/AccountService";
 
 
-
-
-
 export default class BrandContribution {
   //shoptype
   async brandContributionOnShoptye() {

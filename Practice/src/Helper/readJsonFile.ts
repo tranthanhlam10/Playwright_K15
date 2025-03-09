@@ -7,15 +7,6 @@ export default class readJsonFile {
     this.link = link;
   }
 
-  //read js file
-    // readJson()  {
-    //   fs.readFile(this.link, function (err, data) {
-    //     if (err) throw err;
-    //     console.log(data.toString()); // Cho nay phai them buoc parse ra Json
-    //   });
-    // }
-
-
    async readJson() {
     try {
       const data = fs.readFileSync(this.link, "utf8");
@@ -26,11 +17,6 @@ export default class readJsonFile {
       return null;
     }
   }
-
-//   readJson() {
-//     const data = fs.readFileSync(this.link, "utf-8");
-//     return JSON.parse(data);
-//   }
 
   writeJson() {}
 
